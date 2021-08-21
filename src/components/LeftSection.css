@@ -1,0 +1,28 @@
+.left__section {
+    align-items: flex-start;
+    position: sticky;
+    top: 60px;
+    flex: 0.2;
+}
+
+.left__section__content {
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    background: transparent;
+}
+
+.left-sec-text {
+    letter-spacing: 1px;
+}
+
+.left__section__content:hover .left-sec-icon{
+    color: var(--secondary-color);
+}
+
+.left__section__content:hover .left-sec-text{
+    color: var(--secondary-color);
+}
+
+.left-sec-icon {
+    margin-right: 1rem;
+}

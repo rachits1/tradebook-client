@@ -1,0 +1,152 @@
+.feeds__section {
+    flex: 0.6;
+    border-left: var(--border);
+    border-top: var(--border);
+    border-right: var(--border);
+}
+
+.form-container {
+    width: 100%;
+    justify-content: space-evenly;
+    border-bottom: var(--border);
+    padding: 1rem 0;
+}
+
+.post-form {
+    flex: 1;
+    padding:0 0.7rem;
+}
+
+.post-form > input {
+    border: none;
+    background: transparent;
+    padding: 1rem 0.5rem;
+}
+
+.post-form-icons {
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.form-icons {
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.f-ico {
+    color: var(--secondary-color);
+    margin-right: 0.3rem;
+    cursor: pointer;
+}
+
+.partition {
+    width: 100%;
+    height: 15px;
+    background-color: #1f181c;
+    border-bottom: var(--border);
+}
+
+/* POSTS */
+
+.posts-container {
+    padding: 1rem;
+    border-bottom: var(--border);
+    width: 100%;
+}
+
+.profile-avatar {
+    flex: 0.1;
+    align-self: flex-start;
+}
+
+.profile-content {
+    flex: 0.9;
+}
+
+.profile-head {
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+.post-content > p {
+    text-align: justify;
+    font-size: 14px;
+}
+
+.faded {
+    margin-left: 10px;
+    color: var(--border-color);
+}
+
+.post-img {
+    /* width: 100%; */
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.post-img > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.post-icons-container {
+    width: 100%;
+    justify-content: space-between;
+    color: var(--border-color);
+    margin-top: 0.5rem;
+}
+
+.post-icon {
+    color: var(--border-color);
+}
+
+.post-icon:hover, .like-container:hover {
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+.like-count {
+    margin-left: 2px;
+}
+
+@media screen and (max-width: 1000px){
+    .feeds__section {
+        flex: 0.8;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .feeds__section {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .feeds__section {
+        flex: 1;
+    }
+
+    .profile-content {
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .feeds__section {
+        flex: 1;
+    }
+
+    .profile-content {
+        margin-left: 8px;
+    }
+}

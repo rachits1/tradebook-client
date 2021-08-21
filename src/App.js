@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import React,{useEffect} from 'react';
 import './App.css';
+import Navbar from './components/Navbar';
+import LeftSection from './components/LeftSection';
+import FeedsSection from './components/FeedsSection';
+import RightSection from './components/RightSection';
+import {useDispatch} from 'react-redux';
+import {getPosts} from './Redux/actions/posts'; 
 
 function App() {
+  const dispatch = useDispatch()
+  useEffect(()=>{
+    dispatch(getPosts())
+  },[dispatch])
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <div className="main__section container flex">
+         <LeftSection />
+         <FeedsSection />
+         <RightSection />
+      </div>
+      {/* Footer */}
     </div>
   );
 }
