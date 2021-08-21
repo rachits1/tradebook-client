@@ -1,5 +1,5 @@
 import axios from 'axios';
-const url = "https://tradebook-rbt.herokuapp.com//posts";
+const url = "https://tradebook-rbt.herokuapp.com/posts";
 
 export const getPosts = ()=>{
     return async (dispatch)=>{
